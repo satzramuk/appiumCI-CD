@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="1" name="Test" parallel="methods">
+    <classes>
+      <class name="com.e2e.testcases.FirstTest">
+        <methods>
+          <include name="clickAction"/>
+        </methods>
+      </class> <!-- com.e2e.testcases.FirstTest -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Failed suite [Suite] -->
