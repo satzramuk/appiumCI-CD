@@ -18,8 +18,8 @@ public class EmulatorDriverImpl implements IDriver{
 		DesiredCapabilities caps = new DesiredCapabilities();
 		caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
 		caps.setCapability(MobileCapabilityType.DEVICE_NAME, "Android Emulator");
-		caps.setCapability(MobileCapabilityType.APP, "E:\\Mobile Automation\\Appium Learning\\Sample apk\\ApiDemos-debug.apk");
-		
+		//caps.setCapability(MobileCapabilityType.APP, "E:\\Mobile Automation\\Appium Learning\\Sample apk\\ApiDemos-debug.apk");
+		caps.setCapability(MobileCapabilityType.APP, "C:\\Users\\Sathish\\git\\E2EFrameworkDemo\\E2EFrameworkDemo\\src\\test\\resources\\apkfiles\\ApiDemos-debug.apk");
 		
 		return new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"),caps);
 	}

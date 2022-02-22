@@ -29,9 +29,9 @@ public class BrowserStackImpl implements IDriver{
 		caps.setCapability("os_version", "9.0");
 
 		// Set other BrowserStack capabilities
-		caps.setCapability("project", "First Java Project");
+		caps.setCapability("project", "First Framework Project");
 		caps.setCapability("build", "Java Android");
-		caps.setCapability("name", "first_test");
+		caps.setCapability("name", "first_FrameworkTest");
 
 
 		// Initialize the remote Webdriver using BrowserStack remote URL
