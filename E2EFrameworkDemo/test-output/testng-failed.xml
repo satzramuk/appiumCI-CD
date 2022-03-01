@@ -5,7 +5,7 @@
     <classes>
       <class name="com.e2e.testcases.FirstTest">
         <methods>
-          <include name="clickAction"/>
+          <include name="tapAction"/>
         </methods>
       </class> <!-- com.e2e.testcases.FirstTest -->
     </classes>

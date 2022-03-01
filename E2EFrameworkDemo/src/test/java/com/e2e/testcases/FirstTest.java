@@ -1,17 +1,17 @@
 package com.e2e.testcases;
 
-import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
-import com.e2e.driver.DriverManager;
+import com.e2e.pages.HomePage;
 
 public class FirstTest extends BaseTest{
 	
 	@Test
-	public static void clickAction() {
+	public static void tapAction() {
 		
-		DriverManager.getDriver().findElement(By.id("android:id/text1")).click();
+		new HomePage().clickonAction();
 		
+	//DriverManager.getDriver().findElement(By.id("android:id/text1")).click();		
 		
 		
 	}

@@ -21,7 +21,7 @@ public class BrowserStackImpl implements IDriver{
 		caps.setCapability("browserstack.key", "s14LDSWxcnzPK3LqoHzs");
 
 		// Set URL of the application under test
-		caps.setCapability("app", "bs://c282c3e0c822c7bc2fbea4f890790cb9610410d5");
+		caps.setCapability("app", "bs://618d0c31e173c7371a44aa947e9703f5b10684eb");
 
 
 		// Specify device and os_version for testing
