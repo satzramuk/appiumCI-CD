@@ -1,8 +1,9 @@
-package com.e2e.testcases;
+				package com.e2e.testcases;
 
 import org.testng.annotations.Test;
 
 import com.e2e.pages.HomePage;
+import com.e2e.pages.ViewPage;
 
 public class FirstTest extends BaseTest{
 	
@@ -10,6 +11,8 @@ public class FirstTest extends BaseTest{
 	public static void tapAction() {
 		
 		new HomePage().clickonAction();
+		new ViewPage().Tappinganitem("Drag and Drop");
+		
 		
 	//DriverManager.getDriver().findElement(By.id("android:id/text1")).click();		
 		

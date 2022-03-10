@@ -19,7 +19,7 @@ public class HomePage {
 	
 	
 	// Page Factory Way
-	@AndroidFindBy(id="android:id/text1") 
+	@AndroidFindBy(xpath="//android.widget.TextView[@content-desc=\"Views\"]") 
 	private AndroidElement texty1;
 	
 	//By Locators Way

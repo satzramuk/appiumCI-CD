@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="30079" started-at="2022-03-01T17:48:37Z" finished-at="2022-03-01T17:49:07Z">
+  <suite name="Suite" duration-ms="74554" started-at="2022-03-10T17:29:19Z" finished-at="2022-03-10T17:30:34Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="30079" started-at="2022-03-01T17:48:37Z" finished-at="2022-03-01T17:49:07Z">
+    <test name="Test" duration-ms="74554" started-at="2022-03-10T17:29:19Z" finished-at="2022-03-10T17:30:34Z">
       <class name="com.e2e.testcases.FirstTest">
-        <test-method status="PASS" signature="SetUpTest()[pri:0, instance:com.e2e.testcases.FirstTest@4c203ea1]" name="SetUpTest" is-config="true" duration-ms="26451" started-at="2022-03-01T23:18:37Z" finished-at="2022-03-01T23:19:03Z">
+        <test-method status="PASS" signature="SetUpTest()[pri:0, instance:com.e2e.testcases.FirstTest@4c203ea1]" name="SetUpTest" is-config="true" duration-ms="67400" started-at="2022-03-10T22:59:20Z" finished-at="2022-03-10T23:00:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpTest -->
-        <test-method status="PASS" signature="tapAction()[pri:0, instance:com.e2e.testcases.FirstTest@4c203ea1]" name="tapAction" duration-ms="2301" started-at="2022-03-01T23:19:03Z" finished-at="2022-03-01T23:19:06Z">
+        <test-method status="PASS" signature="tapAction()[pri:0, instance:com.e2e.testcases.FirstTest@4c203ea1]" name="tapAction" duration-ms="5662" started-at="2022-03-10T23:00:27Z" finished-at="2022-03-10T23:00:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tapAction -->
-        <test-method status="PASS" signature="tearDownTest()[pri:0, instance:com.e2e.testcases.FirstTest@4c203ea1]" name="tearDownTest" is-config="true" duration-ms="1300" started-at="2022-03-01T23:19:06Z" finished-at="2022-03-01T23:19:07Z">
+        <test-method status="PASS" signature="tearDownTest()[pri:0, instance:com.e2e.testcases.FirstTest@4c203ea1]" name="tearDownTest" is-config="true" duration-ms="1427" started-at="2022-03-10T23:00:33Z" finished-at="2022-03-10T23:00:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
