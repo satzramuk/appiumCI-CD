@@ -10,8 +10,10 @@ public class FirstTest extends BaseTest{
 	@Test
 	public static void tapAction() {
 		
-		new HomePage().clickonAction();
-		new ViewPage().Tappinganitem("Drag and Drop");
+		
+		//new HomePage().clickonAction();
+		//new ViewPage().Tappinganitem("Drag and Drop");
+		new HomePage().clickonAction().Tappinganitem("Drag and Drop");
 		
 		
 	//DriverManager.getDriver().findElement(By.id("android:id/text1")).click();		

@@ -7,6 +7,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
+import com.e2e.constants.FrameworkConstants;
+
 public class PropertyUtils {
 	
 	private static final Properties properties = new Properties();
@@ -14,8 +16,7 @@ public class PropertyUtils {
 	
 	static {
 		
-		try(FileInputStream fileInputStream = new FileInputStream(System.getProperty("user.dir")
-				+"/src/test/resources/config/config.properties")){
+		try(FileInputStream fileInputStream = new FileInputStream(FrameworkConstants.getConfigFilePath())){
 			properties.load(fileInputStream);
 			
 			

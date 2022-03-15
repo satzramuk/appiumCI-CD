@@ -32,8 +32,9 @@ public class HomePage {
 		PageFactory.initElements(new AppiumFieldDecorator(DriverManager.getDriver()), this);
 	}
 	
-	public void clickonAction() {
+	public ViewPage clickonAction() {
 		texty1.click();
+		return new ViewPage();
 	}
 	
 	
