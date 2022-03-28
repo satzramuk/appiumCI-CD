@@ -1,14 +1,18 @@
 package com.e2e.pages;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 
 import com.e2e.driver.DriverManager;
 
+import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidBy;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
 public class HomePage {
 	
@@ -21,6 +25,12 @@ public class HomePage {
 	// Page Factory Way
 	@AndroidFindBy(xpath="//android.widget.TextView[@content-desc=\"Views\"]") 
 	private AndroidElement texty1;
+	
+	//String alternate Way
+	@AndroidFindBy(xpath="//android.widget.TextView")
+	@iOSXCUITFindBy(accessibility="text")
+	private List<MobileElement> menuitems;
+	
 	
 	//By Locators Way
 	
@@ -43,6 +53,14 @@ public class HomePage {
 	}
 	
 	
+	public HomePage ClickanMenuitem(String menu) {
+		for(MobileElement element:menuitems) {
+			if(element.getText().equalsIgnoreCase(menu)) {
+				element.click();
+			}
+		}
+		return this;
+	}
 	
-
+	
 }

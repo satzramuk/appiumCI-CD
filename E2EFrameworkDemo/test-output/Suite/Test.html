@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Mar 10 22:59:19 IST 2022</td>
+<td>Started on:</td><td>Mon Mar 28 19:43:38 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>74 seconds (74554 ms)</td>
+<tr><td>Total time:</td><td>22 seconds (22151 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -76,9 +76,68 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.e2e.testcases.FirstTest.tapAction()'><b>tapAction</b><br>Test class: com.e2e.testcases.FirstTest</td>
-<td></td>
-<td>5</td>
-<td>com.e2e.testcases.FirstTest@4c203ea1</td></tr>
+<td><div><pre>java.lang.RuntimeException: java.lang.NoSuchMethodException: jdk.proxy2.$Proxy9.proxyClassLookup()
+	at io.appium.java_client.pagefactory.bys.builder.AppiumByBuilder.prepareAnnotationMethods(AppiumByBuilder.java:84)
+	at io.appium.java_client.pagefactory.bys.builder.AppiumByBuilder.getFilledValue(AppiumByBuilder.java:91)
+	at io.appium.java_client.pagefactory.bys.builder.AppiumByBuilder.createBy(AppiumByBuilder.java:147)
+	at io.appium.java_client.pagefactory.DefaultElementByBuilder.getBys(DefaultElementByBuilder.java:133)
+	at io.appium.java_client.pagefactory.DefaultElementByBuilder.buildMobileNativeBy(DefaultElementByBuilder.java:170)
+	at io.appium.java_client.pagefactory.DefaultElementByBuilder.buildBy(DefaultElementByBuilder.java:204)
+	at io.appium.java_client.pagefactory.AppiumElementLocatorFactory.createLocator(AppiumElementLocatorFactory.java:66)
+	at io.appium.java_client.pagefactory.AppiumElementLocatorFactory.createLocator(AppiumElementLocatorFactory.java:53)
+	at io.appium.java_client.pagefactory.AppiumElementLocatorFactory.createLocator(AppiumElementLocatorFactory.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:56)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.decorate(AppiumFieldDecorator.java:160)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.e2e.pages.HomePage.&lt;init&gt;(HomePage.java:42)
+	at com.e2e.testcases.FirstTest.tapAction(FirstTest.java:15)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.NoSuchMethodException: jdk.proxy2.$Proxy9.proxyClassLookup()
+	at java.base/java.lang.Class.getMethod(Class.java:2227)
+	at io.appium.java_client.pagefactory.bys.builder.AppiumByBuilder.prepareAnnotationMethods(AppiumByBuilder.java:82)
+	... 29 more
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1930629463", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1930629463'><pre>java.lang.RuntimeException: java.lang.NoSuchMethodException: jdk.proxy2.$Proxy9.proxyClassLookup()
+	at io.appium.java_client.pagefactory.bys.builder.AppiumByBuilder.prepareAnnotationMethods(AppiumByBuilder.java:84)
+	at io.appium.java_client.pagefactory.bys.builder.AppiumByBuilder.getFilledValue(AppiumByBuilder.java:91)
+	at io.appium.java_client.pagefactory.bys.builder.AppiumByBuilder.createBy(AppiumByBuilder.java:147)
+	at io.appium.java_client.pagefactory.DefaultElementByBuilder.getBys(DefaultElementByBuilder.java:133)
+	at io.appium.java_client.pagefactory.DefaultElementByBuilder.buildMobileNativeBy(DefaultElementByBuilder.java:170)
+	at io.appium.java_client.pagefactory.DefaultElementByBuilder.buildBy(DefaultElementByBuilder.java:204)
+	at io.appium.java_client.pagefactory.AppiumElementLocatorFactory.createLocator(AppiumElementLocatorFactory.java:66)
+	at io.appium.java_client.pagefactory.AppiumElementLocatorFactory.createLocator(AppiumElementLocatorFactory.java:53)
+	at io.appium.java_client.pagefactory.AppiumElementLocatorFactory.createLocator(AppiumElementLocatorFactory.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:56)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.decorate(AppiumFieldDecorator.java:160)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at com.e2e.pages.HomePage.&lt;init&gt;(HomePage.java:42)
+	at com.e2e.testcases.FirstTest.tapAction(FirstTest.java:15)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.NoSuchMethodException: jdk.proxy2.$Proxy9.proxyClassLookup()
+	at java.base/java.lang.Class.getMethod(Class.java:2227)
+	at io.appium.java_client.pagefactory.bys.builder.AppiumByBuilder.prepareAnnotationMethods(AppiumByBuilder.java:82)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>com.e2e.testcases.FirstTest@6c130c45</td></tr>
 </table><p>
 </body>
 </html>

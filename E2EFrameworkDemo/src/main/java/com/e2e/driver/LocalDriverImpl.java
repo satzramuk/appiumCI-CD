@@ -21,7 +21,7 @@ public class LocalDriverImpl implements IDriver{
 		DesiredCapabilities cap = new DesiredCapabilities();
 		cap.setCapability(MobileCapabilityType.UDID, "ba325f0f");
 		cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
-		cap.setCapability(MobileCapabilityType.APP, new FrameworkConstantUsingLombak().getApkfilepath());
+		cap.setCapability(MobileCapabilityType.APP, new FrameworkConstantUsingLombak().getInstance());
 		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "VIVO Z1 Pro");
 		cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
 		cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10.0");
