@@ -7,13 +7,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import com.e2e.constants.FrameworkConstantUsingLombak;
-import com.e2e.constants.FrameworkConstants;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.MobileCapabilityType;
 
 public class LocalDriverImpl implements IDriver{
+	
+	//Web Browser, Mobile(Both Native Android, iOS), PWA
 
 	@Override
 	public WebDriver getDriver() throws MalformedURLException {

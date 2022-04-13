@@ -1,64 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-28T19:43:38 IST" name="Suite" finished-at="2022-03-28T19:44:00 IST" duration-ms="22151">
+  <suite started-at="2022-04-13T21:35:04 IST" name="Suite" finished-at="2022-04-13T21:35:26 IST" duration-ms="21675">
     <groups>
     </groups>
-    <test started-at="2022-03-28T19:43:38 IST" name="Test" finished-at="2022-03-28T19:44:00 IST" duration-ms="22151">
+    <test started-at="2022-04-13T21:35:04 IST" name="Test" finished-at="2022-04-13T21:35:26 IST" duration-ms="21675">
       <class name="com.e2e.testcases.FirstTest">
-        <test-method is-config="true" signature="SetUpTest()[pri:0, instance:com.e2e.testcases.FirstTest@6c130c45]" started-at="2022-03-28T19:43:38 IST" name="SetUpTest" finished-at="2022-03-28T19:43:57 IST" duration-ms="19415" status="PASS">
+        <test-method is-config="true" signature="SetUpTest()[pri:0, instance:com.e2e.testcases.FirstTest@6c130c45]" started-at="2022-04-13T21:35:04 IST" name="SetUpTest" finished-at="2022-04-13T21:35:23 IST" duration-ms="18802" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUpTest -->
-        <test-method signature="tapAction()[pri:0, instance:com.e2e.testcases.FirstTest@6c130c45]" started-at="2022-03-28T19:43:57 IST" name="tapAction" finished-at="2022-03-28T19:43:57 IST" duration-ms="105" status="FAIL">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[java.lang.NoSuchMethodException: jdk.proxy2.$Proxy9.proxyClassLookup()]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: java.lang.NoSuchMethodException: jdk.proxy2.$Proxy9.proxyClassLookup()
-at io.appium.java_client.pagefactory.bys.builder.AppiumByBuilder.prepareAnnotationMethods(AppiumByBuilder.java:84)
-at io.appium.java_client.pagefactory.bys.builder.AppiumByBuilder.getFilledValue(AppiumByBuilder.java:91)
-at io.appium.java_client.pagefactory.bys.builder.AppiumByBuilder.createBy(AppiumByBuilder.java:147)
-at io.appium.java_client.pagefactory.DefaultElementByBuilder.getBys(DefaultElementByBuilder.java:133)
-at io.appium.java_client.pagefactory.DefaultElementByBuilder.buildMobileNativeBy(DefaultElementByBuilder.java:170)
-at io.appium.java_client.pagefactory.DefaultElementByBuilder.buildBy(DefaultElementByBuilder.java:204)
-at io.appium.java_client.pagefactory.AppiumElementLocatorFactory.createLocator(AppiumElementLocatorFactory.java:66)
-at io.appium.java_client.pagefactory.AppiumElementLocatorFactory.createLocator(AppiumElementLocatorFactory.java:53)
-at io.appium.java_client.pagefactory.AppiumElementLocatorFactory.createLocator(AppiumElementLocatorFactory.java:1)
-at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:56)
-at io.appium.java_client.pagefactory.AppiumFieldDecorator.decorate(AppiumFieldDecorator.java:160)
-at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113)
-at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
-at com.e2e.pages.HomePage.<init>(HomePage.java:42)
-at com.e2e.testcases.FirstTest.tapAction(FirstTest.java:15)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: java.lang.NoSuchMethodException: jdk.proxy2.$Proxy9.proxyClassLookup()
-at java.base/java.lang.Class.getMethod(Class.java:2227)
-at io.appium.java_client.pagefactory.bys.builder.AppiumByBuilder.prepareAnnotationMethods(AppiumByBuilder.java:82)
-... 29 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+        <test-method signature="tapAction()[pri:0, instance:com.e2e.testcases.FirstTest@6c130c45]" started-at="2022-04-13T21:35:23 IST" name="tapAction" finished-at="2022-04-13T21:35:24 IST" duration-ms="1236" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tapAction -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.e2e.testcases.FirstTest@6c130c45]" started-at="2022-03-28T19:43:57 IST" name="tearDownTest" finished-at="2022-03-28T19:44:00 IST" duration-ms="2574" status="PASS">
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:com.e2e.testcases.FirstTest@6c130c45]" started-at="2022-04-13T21:35:24 IST" name="tearDownTest" finished-at="2022-04-13T21:35:26 IST" duration-ms="1579" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->

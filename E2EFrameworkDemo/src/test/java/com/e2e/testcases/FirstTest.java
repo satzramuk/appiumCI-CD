@@ -1,26 +1,33 @@
-				package com.e2e.testcases;
+package com.e2e.testcases;
 
 import org.testng.annotations.Test;
 
-import com.e2e.pages.HomePage;
+import com.aventstack.extentreports.ExtentTest;
+import com.e2e.pages.ViewPage;
+import com.e2e.reports.ExtentReport;
 
 public class FirstTest extends BaseTest{
-	
+
 	@Test
-	public static void tapAction() {
+	public void tapAction() {
+
+		ExtentTest test = ExtentReport.extent.createTest("My First Testcase");
 		
-		
+		//PageFactoryWay
 		//new HomePage().clickonAction();
+		//String literal Way
+		new ViewPage().Tappinganitem("Views");
 		//new ViewPage().Tappinganitem("Drag and Drop");
-		//new HomePage().clickonAction().Tappinganitem("Drag and Drop");
 		//(or)
-		new HomePage().ClickanMenuitem("Views").ClickanMenuitem("Drag and Drop");
+		//Alternate String literal Way
+		//new HomePage().ClickanMenuitem("Views");
 		
-		
-		
-	//DriverManager.getDriver().findElement(By.id("android:id/text1")).click();		
-		
-		
+
+
+
+		//DriverManager.getDriver().findElement(By.id("android:id/text1")).click();		
+
+
 	}
 
 }

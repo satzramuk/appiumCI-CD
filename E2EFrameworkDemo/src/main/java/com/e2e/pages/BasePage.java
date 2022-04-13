@@ -48,6 +48,7 @@ public abstract class BasePage {
 	}
 
 
+	
 	//Click using By
 
 	protected void clickUsingBy(By by) { 	
