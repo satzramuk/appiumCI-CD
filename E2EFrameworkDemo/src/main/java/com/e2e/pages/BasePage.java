@@ -8,16 +8,19 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.e2e.driver.DriverManager;
+import com.e2e.reports.ExtentManager;
 
 import io.appium.java_client.MobileElement;
 
 public abstract class BasePage {
 
 	//Click using MobileElement
-	protected void clickUsingMobElement(MobileElement element) {
+	protected void clickUsingMobElement(MobileElement element,String elementname) {
 		explicitWaitUsingMobElement(element);   	
 		element.click();
+		System.out.println(elementname + "is clicked successfully");
 		//ExtentLogger.pass(element + "is clicked successfully", true);
+		//ExtentManager.getExtentTest().pass(elementname + "is clicked successfully");
 	}
 
 
@@ -31,10 +34,12 @@ public abstract class BasePage {
 	}
 
 	//Click using WebElement
-	protected void clickUsingWebElement(WebElement element) {
+	protected void clickUsingWebElement(WebElement element,String elementname) {
 		explicitWaitUsingWebElement(element);   	
 		element.click();
+		System.out.println(elementname + "is clicked successfully");
 		//ExtentLogger.pass(element + "is clicked successfully", true);
+		//ExtentManager.getExtentTest().pass(elementname + "is clicked successfully");
 	}
 
 
@@ -53,7 +58,7 @@ public abstract class BasePage {
 
 	protected void clickUsingBy(By by) { 	
 
-		clickUsingWebElement(DriverManager.getDriver().findElement(by));
+		clickUsingWebElement(DriverManager.getDriver().findElement(by), null);
 	}
 
 	//Implicit Wait 

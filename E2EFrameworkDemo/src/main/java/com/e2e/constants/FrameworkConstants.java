@@ -16,6 +16,9 @@ public final class FrameworkConstants {
 	private static final String configfilepath =resourcepath
 			+"/config/config.properties";
 	
+	public static String getResourcePath() {
+		return resourcepath;
+	}
 	
 	public static String getApkFilePath() {
 		return apkfilepath;

@@ -8,6 +8,6 @@
       <include name="tapAction"/>
       </methods>
       </class>
-    </classes>
+     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

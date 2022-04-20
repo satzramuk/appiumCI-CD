@@ -3,6 +3,7 @@ package com.e2e.pages;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
 import com.e2e.driver.DriverManager;
@@ -13,7 +14,7 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
-public class HomePage {
+public class HomePage extends BasePage{
 
 
 	//1. Page Factory Way
@@ -36,6 +37,7 @@ public class HomePage {
 
 	By textusingby = By.id("android:id/text1");
 
+	
 
 
 //	public HomePage() {
@@ -52,7 +54,10 @@ public class HomePage {
 
 
 	public void clickonActionByWay() {
-		DriverManager.getDriver().findElement(textusingby).click();
+		//DriverManager.getDriver().findElement(textusingby).click();
+		WebElement findElement = DriverManager.getDriver().findElement(By.id("android:id/text1"));
+		clickUsingWebElement(findElement, "ViewsCTA");
+	
 	}
 
 
@@ -65,4 +70,15 @@ public class HomePage {
 	}
 
 
+	
+	@Override
+	protected void scrollToSpecificElement(By by) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	protected void dragAndDrop(MobileElement source, MobileElement target) {
+		// TODO Auto-generated method stub
+		
+	}
 }
