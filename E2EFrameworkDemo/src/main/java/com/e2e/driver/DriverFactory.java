@@ -12,6 +12,7 @@ public final class DriverFactory {
 		WebDriver driver = null;
 		
 		if(mode.equals(Modes.LOCAL)){
+			
 			driver = new LocalDriverImpl().getDriver();
 		}
 		else if(mode.equals(Modes.EMULATOR)) {
@@ -22,6 +23,9 @@ public final class DriverFactory {
 		}
 		else if(mode.equals(Modes.SAUCELABS)) {
 			driver = new SauceLabsDriverImpl().getDriver();
+		}
+		else if(mode.equals(Modes.EMULATORGITACTION)) {
+			driver = new EmulatorGitActionImpl().getDriver();
 		}
 		return driver;
 		

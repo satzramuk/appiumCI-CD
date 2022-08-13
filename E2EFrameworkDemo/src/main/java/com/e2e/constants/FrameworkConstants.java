@@ -13,6 +13,10 @@ public final class FrameworkConstants {
 			+"/apkfiles/ApiDemos-debug.apk";
 
 
+	
+
+
+
 	private static final String configfilepath =resourcepath
 			+"/config/config.properties";
 	

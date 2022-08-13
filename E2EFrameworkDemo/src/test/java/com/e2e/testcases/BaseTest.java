@@ -8,7 +8,6 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
-import com.aventstack.extentreports.ExtentTest;
 import com.e2e.driver.Driver;
 import com.e2e.reports.ExtentReport;
 
